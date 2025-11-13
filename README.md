@@ -78,7 +78,7 @@ Susceptibility measures how strongly a material becomes magnetized.
 
 Magnetization, permeability, and susceptibility form the physical basis of MRI. Their combined influence governs how magnetic fields interact with tissues, how signals are formed, and how clear an image becomes. From shielding design to contrast enhancement, these principles transform invisible magnetic behavior into visible medical insight.
  ## References
- Haacke E. M. et al., Magnetic Resonance Imaging: Physical Principles
+  Haacke E. M. et al., Magnetic Resonance Imaging: Physical Principles
  and Sequence Design, Wiley, 2014.
  AIIMS Radiology Technical Overview, 2023.
  Siemens Healthineers, MRI Field Design Notes, 2022.
