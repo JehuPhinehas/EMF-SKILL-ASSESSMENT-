@@ -1,4 +1,4 @@
-Magnetization, Permeability, and
+``Magnetization, Permeability, and
  Susceptibility in Medical Imaging
  1. Introduction
  Magnetic Resonance Imaging (MRI) is a key medical technology that produces high
