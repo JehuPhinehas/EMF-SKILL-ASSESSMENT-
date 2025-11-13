@@ -41,51 +41,45 @@ Susceptibility measures how strongly a material becomes magnetized.
  susceptibility changes linked to blood oxygen levels. Gadolinium agents locally alter χ to highlight
  tumors.
 
-
-**Example Calculation:**
-For tissue with relative permeability μᵣ = 1.00025:
-- χ = μᵣ - 1 = 0.00025
-- In a 3 T field (H = 2.39 × 10⁶ A/m):
-- M = χH = 0.00025 × 2.39 × 10⁶ = 597.5 A/m
-
 ## 6. Clinical Applications
-
-### Contrast Agents
-Paramagnetic agents (e.g., gadolinium) increase local susceptibility to enhance specific tissues in images.
-
-### Tissue Characterization
-Water-rich tissues (high χ) appear differently from fat or bone, enabling diagnosis of tumors, lesions, and structural abnormalities.
-
-### Shimming
-Active shimming corrects magnetic field inhomogeneities by adjusting coil currents, improving image quality and reducing artifacts.
-
-### Metal Artifacts Reduction
-Artificial implants create localized field distortions. Modern techniques manage these effects for safer, clearer imaging.
-
+ B=μ0 (H+M)=μ0 (1+χ)H=μH
+ These parameters are interdependent. Accurate modeling of their relationship helps
+ maintain field uniformity and image accuracy. Engineers use them when designing coils,
+ magnets, and shielding.
 ## 7. Advanced Techniques
-
-### Susceptibility-Weighted Imaging (SWI)
-Exploits magnetic susceptibility differences to detect microhemorrhages and iron deposits in the brain.
-
-### Parallel Imaging
-Systems optimize gradient linearity using precisely calculated μ values for faster, artifact-free scans.
+ Modern MRI scanners apply AI-based correction to counter field distortion caused by
+ susceptibility differences near air cavities or metallic implants. Adjusting gradient fields
+ in real time improves anatomical precision in cardiac and brain imaging
+ Dynamic Field Mapping: AI algorithms continuously monitor magnetic field uniformity
+ and automatically re-calibrate gradient coils to maintain homogeneity across the
+ imaging region.
+ Distortion Compensation: In areas like the sinuses, ears, or post-surgical regions
+ containing metal clips, real-time correction minimizes geometric distortion and signal
+ loss.
+ Noise Reduction: Machine learning models separate true tissue signals from artifacts
+ caused by local magnetic field variations, improving overall image clarity.
+ Adaptive Scanning: AI adjusts pulse sequences and acquisition parameters during
+ scanning based on tissue magnetic response, optimizing scan time and image quality.
+ Enhanced fMRI Accuracy: In functional MRI, susceptibility correction reduces false
+ activations and enhances the accuracy of blood oxygen level–dependent (BOLD)
+ contrast
+ Patient-Specific Calibration: Systems learn from previous scans to predict and
+ correct field errors specific to each patient’s anatomy or implanted device.
+ Reduced Need for Manual Shimming: Traditional shimming (manual adjustment of
+ field uniformity) is replaced by automated, real-time magnetic optimization.
+ Improved Diagnostic Confidence: These AI-driven corrections allow radiologists to
+ visualize fine details in challenging regions — such as the heart, brainstem, or near
+ metal implants — with higher spatial accuracy.
 <img width="890" height="298" alt="Screenshot 2025-11-13 225209" src="https://github.com/user-attachments/assets/9274b6ab-d327-49c6-ab58-8a4ba30ec9db" />
-
-### Quantitative Susceptibility Mapping (QSM)
-Quantifies tissue susceptibility to detect neurological conditions like Parkinson's disease and multiple sclerosis.
-
-### AI-Driven Field Optimization
-Machine learning predicts and corrects field errors specific to each patient's anatomy or implanted device.
-
-### Patient-Specific Calibration
-Systems learn from previous scans to predict and correct field errors specific to each patient's anatomy or implanted device.
-
-### Reduced Need for Manual Shimming
-Traditional shimming (manual adjustment of field uniformity) is replaced by automated, real-time magnetic optimization.
-
-### Improved Diagnostic Confidence
-These AI-driven corrections allow radiologists to visualize fine details in challenging regions—such as the heart, brainstem, or near metal implants—with higher spatial accuracy.
+<img width="856" height="860" alt="Screenshot 2025-11-13 230212" src="https://github.com/user-attachments/assets/91fcbc36-d186-4c86-99ee-092afa3c13f5" />
+<img width="864" height="893" alt="Screenshot 2025-11-13 230222" src="https://github.com/user-attachments/assets/ac61cf99-a152-415e-be62-f370d06e18f5" />
 
 ## 8. Conclusion
 
 Magnetization, permeability, and susceptibility form the physical basis of MRI. Their combined influence governs how magnetic fields interact with tissues, how signals are formed, and how clear an image becomes. From shielding design to contrast enhancement, these principles transform invisible magnetic behavior into visible medical insight.
+ ## References
+ Haacke E. M. et al., Magnetic Resonance Imaging: Physical Principles
+ and Sequence Design, Wiley, 2014.
+ AIIMS Radiology Technical Overview, 2023.
+ Siemens Healthineers, MRI Field Design Notes, 2022.
+ NIST, Magnetic Properties of Biological Materials, 2023
