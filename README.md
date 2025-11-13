@@ -42,7 +42,7 @@ Susceptibility measures how strongly a material becomes magnetized.
  tumors.
 
 ## 6. Clinical Applications
- B=μ0 (H+M)=μ0 (1+χ)H=μH
+ **B=μ0 (H+M)=μ0 (1+χ)H=μH**
  These parameters are interdependent. Accurate modeling of their relationship helps
  maintain field uniformity and image accuracy. Engineers use them when designing coils,
  magnets, and shielding.
