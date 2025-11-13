@@ -3,6 +3,7 @@
 ## 1. Introduction
 
 Magnetic Resonance Imaging (MRI) is a key medical technology that produces high-resolution internal images without using radiation. Its operation depends on how matter interacts with magnetic fields—specifically through magnetization (M), magnetic permeability (μ), and magnetic susceptibility (χ). These properties determine image clarity, safety, and the ability to distinguish tissues. Engineers and clinicians use them to design precise scanners and interpret images accurately.
+<img width="833" height="345" alt="Screenshot 2025-11-13 224907" src="https://github.com/user-attachments/assets/0d92c5d1-eb34-4cfc-bd26-563e57fe1443" />
 
 ## 2. Background
 
@@ -15,6 +16,7 @@ MRI employs a strong static magnetic field, typically 1.5–3 T, to align hydrog
 Magnetization is the net magnetic moment per unit volume caused by an external magnetic field. In MRI, it represents the alignment of nuclear spins that generate the detectable signal.
 
 **Application:** Stable, uniform magnetization maintained by superconducting magnets ensures clear images. For example, in brain scans, consistent M prevents signal loss and distortion.
+<img width="868" height="387" alt="Screenshot 2025-11-13 224956" src="https://github.com/user-attachments/assets/6c2e85c8-1556-4bd6-835b-c2b93d5be123" />
 
 ## 4. Magnetic Permeability (μ)
 
@@ -23,12 +25,22 @@ Magnetization is the net magnetic moment per unit volume caused by an external m
 Permeability shows how easily magnetic lines of force pass through a material. Biological tissues have permeability close to free space, but MRI hardware uses materials with specific μ values.
 
 **Application:** Scanner rooms use mu-metal shielding to block outside magnetic noise. Gradient coils are built from low-loss materials with stable μ to maintain field linearity.
+<img width="890" height="298" alt="Screenshot 2025-11-13 225209" src="https://github.com/user-attachments/assets/4fcc53ce-41e5-45cb-be54-f87addfd67ba" />
+
 
 ## 5. Magnetic Susceptibility (χ)
 
 **Formula:** χ = H/M
 
-Susceptibility measures how strongly a material becomes magnetized. Different tissues (water, fat, bone) have distinct χ values, creating natural image contrast.
+Susceptibility measures how strongly a material becomes magnetized.
+ Diamagnetic (χ < 0): Water, fat—weakly repelled.
+ Paramagnetic (χ > 0): Blood with deoxyhemoglobin, contrast agents—weakly attracted.
+ Ferromagnetic (χ ≫
+ 1): Iron, steel—unsafe in MRI.
+ Application: MRI contrast depends on χ variations. Functional MRI (fMRI) tracks small
+ susceptibility changes linked to blood oxygen levels. Gadolinium agents locally alter χ to highlight
+ tumors.
+
 
 **Example Calculation:**
 For tissue with relative permeability μᵣ = 1.00025:
@@ -57,6 +69,7 @@ Exploits magnetic susceptibility differences to detect microhemorrhages and iron
 
 ### Parallel Imaging
 Systems optimize gradient linearity using precisely calculated μ values for faster, artifact-free scans.
+<img width="890" height="298" alt="Screenshot 2025-11-13 225209" src="https://github.com/user-attachments/assets/9274b6ab-d327-49c6-ab58-8a4ba30ec9db" />
 
 ### Quantitative Susceptibility Mapping (QSM)
 Quantifies tissue susceptibility to detect neurological conditions like Parkinson's disease and multiple sclerosis.
